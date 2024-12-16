@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    }
+    header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    }
+    nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333;
+    }
+    nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    }
+    nav a:hover {
+    background-color: #575757;
+    }
+    section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    }
+    .card {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+    .card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    }
+    footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+    #anhor-index{
+        text-decoration: none;
+    }
+
+
+    /* Unique Styling for the Diagnosis Section */
+    #diagnosis-section {
+        background-color: #ffffff; /* White background */
+        padding: 30px 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 20px auto;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd; /* Light gray border */
+    }
+    
+    .diagnosis-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    
+    .diagnosis-card div {
+        text-align: center;
+        flex: 1;
+    }
+    
+    .diagnosis-card i {
+        font-size: 50px;
+        color: #28a745; /* Green color for icons */
+        margin-bottom: 10px;
+    }
+    
+    .diagnosis-card p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+    }
+    
+    .diagnosis-btn {
+        background-color: #28a745; /* Green button */
+        color: white;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .diagnosis-btn:hover {
+        background-color: #218838; /* Darker green on hover */
+        transform: scale(1.05);
+    }
