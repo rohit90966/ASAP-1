@@ -1,5 +1,5 @@
 async function getWeather(latitude, longitude) {
-    const apiKey = "a2485e185326d1f0ad4651550044c137"; // Replace with your OpenWeatherMap API key
+    const apiKey = "a2485e185326d1f0ad4651550044c137"; 
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
   
     try {
@@ -11,8 +11,8 @@ async function getWeather(latitude, longitude) {
       const temp = Math.round(data.main.temp);
       const minTemp = Math.round(data.main.temp_min);
       const maxTemp = Math.round(data.main.temp_max);
-      const humidity = data.main.humidity; // Current humidity in %
-      const windSpeed = data.wind.speed; // Current wind speed in km/h
+      const humidity = data.main.humidity;
+      const windSpeed = data.wind.speed; 
       const sunsetTime = new Date(data.sys.sunset * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
       const weatherCondition = data.weather[0].main;
   

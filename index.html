@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="asep.css">
 <link
   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-
 </head>
 <body>
 <header>
@@ -37,6 +36,10 @@
       </div>
     </div>
     <button class="diagnosis-btn">Take a Picture</button>
+    
+    <!-- for photo -->
+    <video id="video" autoplay style="display: none;"></video>
+    <canvas id="canvas" style="display: none;"></canvas>
   </section>
 <section id="weather">
 <div class="card">
@@ -69,4 +72,5 @@
 <p>&copy; 2024 Agricultural Support webPlatform. All rights reserved.</p>
 </footer>
 </body>
+<script src="/photo.js"></script>
 </html>

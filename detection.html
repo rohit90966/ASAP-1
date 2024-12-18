@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance Page</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    /* Navbar Styles */
+    header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    }
+    nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333;
+    }
+    nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    }
+    nav a:hover {
+    background-color: #575757;
+    }
+    /* Container for maintenance message */
+    .container {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      padding: 20px;
+      margin-top: 100px; /* Push content below navbar */
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      color: #d9534f;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border: 5px solid #eee;
+      border-radius: 8px;
+      margin: 10px auto;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer Styles */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #4CAF50; /* Green background */
+      color: white;
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 10px 0;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .footer a:hover {
+      text-decoration: none;
+    }
+
+    /* Animation for fade-in effect */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>Agricultural support Webplatform</h1>
+    <p>Empowering farmers with technology</p>
+    </header>
+    <nav>
+        <a href="/index.html">Home</a>   
+        <a href="/weather.html">Weather Updates</a>
+        <a href="#crop">Crop Recommendations</a>
+        <a href="#market">Market Prices</a>
+    
+    </nav>
+
+  <!-- Maintenance Content -->
+  <div class="container">
+    <h1>🚧 Page Under Maintenance 🚧</h1>
+    <p>We are working hard to improve your experience. Thank you for your patience!</p>
+    <div>
+      <h3>Your Captured Photo:</h3>
+      <img id="captured-photo" src="" alt="Captured Photo">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2024 Agricultural Support Webplatform. All rights reserved.
+  </div>
+
+  <script>
+    // Retrieve the captured photo from local storage
+    const photo = localStorage.getItem("capturedPhoto");
+    const imgElement = document.getElementById("captured-photo");
+    if (photo) {
+      imgElement.src = photo;
+    } else {
+      imgElement.alt = "No photo available";
+    }
+  </script>
+</body>
+</html>
